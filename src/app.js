@@ -2,10 +2,11 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
-const port = 3030; 
+const PORT = process.env.PORT || 3000;
+; 
 const rutaPublic = path.join(__dirname,"../", "public");// ../ me permite volver una carpeta atrás
 
-app.listen(port, () => {console.log("Corriendo correctamente")});
+app.listen(PORT, () => {console.log("Corriendo correctamente")});
 
 app.use(express.static(rutaPublic));
 
