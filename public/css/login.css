@@ -1,0 +1,101 @@
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;;
+    --celeste: #1259c3;
+    --grisOscuro: #666;
+    --grisClaro: #ebebeb;
+    --verde: #39b54a;
+}
+
+main {
+    width: 70%;
+    min-height: 50vh;
+    margin: auto;
+    margin-top: 5%;
+    /* margin-bottom: 5%; */
+    padding: 5% 8%;
+    background-color: white;
+    font-size: 14px;
+}
+
+/*-----------------Formulario-----------------*/
+
+.login {
+    padding: 0;
+}
+
+.login>h1 {
+    text-align: center;
+    margin-top: 0%;
+    font-size: 1.9em;
+}
+
+.login .control-form {
+    margin-bottom: 4%;
+}
+
+.login .control {
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px;
+    border-style: outset;
+    margin-top: 5px;
+}
+
+.login .buttons{
+    justify-content: center;
+    margin-top: 10%;
+}
+
+@media (min-width: 520px) {
+
+    main {
+        width: 60%;
+    }
+    
+    /*-----------------Formulario-----------------*/
+    
+    .login {
+        padding: 0%;
+    }
+    
+    .login h1 {
+        text-align: center;
+        font-size: 28px;
+    }
+    
+}
+
+@media (min-width: 769px) {
+
+    main {
+        width: 50%;
+        font-size: 18px;
+        border: 1px var(--grisClaro) solid;
+    }
+
+    /*-----------------Formulario-----------------*/
+
+    .login {
+        padding: 3%;
+    }
+
+    .login h1 {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    main {
+        width: 35%;
+        padding: 5%;
+    }
+
+    /*-----------------Formulario-----------------*/
+
+    .login .buttons button{
+        font-size: 20px;
+    }
+
+}

@@ -1,0 +1,36 @@
+form.create-form {
+    padding: 8%;
+}
+
+form.create-form .control-form, .check-oferta {
+    margin-bottom: 4%;
+}
+
+.check-oferta input{
+    margin: 0% 2% 0%;
+}
+
+form.create-form .control-form label {
+    margin-bottom: 2%;
+    display: block;
+}
+
+form.create-form .control {
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px;
+}
+
+form .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .b-form {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--celeste);
+    font-size: 18px;
+    color: white;
+    padding: 5px 10px;
+}

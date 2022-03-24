@@ -1,0 +1,124 @@
+main {
+    width: 80%;
+    margin: auto;
+    padding: 5% 8%;
+    background-color: white;
+    font-size: 14px;
+}
+
+/*-----------------Formulario-----------------*/
+
+.register {
+    padding: 0;
+}
+
+.register>h1 {
+    text-align: center;
+}
+
+.register .control-form {
+    margin-bottom: 4%;
+}
+
+.register .control {
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px;
+    border-style: outset;
+    margin-top: 5px;
+}
+
+.error-message {
+    display: none;
+}
+
+.control:invalid + span.error-message {
+    display: inline;
+    color: red;
+}   
+
+.categorias {
+    display: flex; 
+    width: 70%;
+    justify-content: space-between;  
+}
+
+@media (min-width: 520px) {
+    
+    /*-----------------Formulario-----------------*/
+    
+    .register {
+        padding: 3%;
+    }
+    
+    .register h1 {
+        text-align: center;
+        font-size: 28px;
+    }
+    
+    .register .calendar-photo {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .register .photo, .register .calendar {
+        width: 46%;
+    }
+    
+    input#photo.control {
+        border: 2px solid #666;
+        border-style: outset;
+    }
+    
+}
+
+@media (min-width: 769px) {
+
+    main {
+        width: 70%;
+        font-size: 18px;
+    }
+
+    /*-----------------Formulario-----------------*/
+
+    .register {
+        padding: 3%;
+    }
+
+    .register h1 {
+        font-size: 28px;
+    }
+
+    .register .d-control {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .register .d-control .control-form {
+        width: 47%;
+    }
+
+    .categorias {
+        width: 40%; 
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    main {
+        width: 50%;
+        padding: 5%;
+    }
+
+    /*-----------------Formulario-----------------*/
+
+    .register {
+        padding: 0%;
+    }
+
+    .register h1 {
+        margin-bottom: 5%;
+    }
+
+}

@@ -1,0 +1,415 @@
+/*-------------------- Universales ---------------------*/
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;;
+    --celeste: #1259c3;
+    --grisOscuro: #666;
+    --grisClaro: #ebebeb;
+    --verde: #39b54a;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%s;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    background-color: var(--grisClaro);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav  ul{
+    list-style: none;
+    padding-left: 0%;
+}
+
+/*--------------------- Header/NavBar ------------------------*/
+
+header {
+    background-color: var(--amarillo);
+    padding: 5% 0%;
+}
+
+header .header-top-bar, header .header-bottom-bar {
+    width: 90%;
+    margin: auto;
+}
+
+/*Top Bar*/
+
+header .top-l {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5%;
+}
+
+header .logo-header {
+    width: 45%;
+    padding: 3%;
+    max-width: 250px;
+}
+
+/*------Buscador------*/
+
+header .search-bar {
+    padding-left: 3%;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+header .search-bar input {
+    width: 80%;
+    max-width: 350px;
+    height: 1.8rem;
+    padding-left: 8px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 0.8em;
+}
+
+header .search-bar button {
+    height: 1.8rem;
+    border-radius: 0%;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: white;
+}
+
+header .copy-header {
+    text-align: center;
+}
+
+header .copy-header i {
+    padding-right: 2px;
+}
+
+/*Bottom bar*/
+
+header .header-bottom-bar {
+    display: none;
+}
+
+.burger-menu {
+    max-width: 60px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    display: block;
+    margin: auto;
+    background-color: var(--celeste);
+    border-radius: 10%;
+    border: none;
+    font-size: 14px;
+    color: white;
+    margin-top: 3%;
+}
+
+/*-------------------- Aside ----------------------*/
+
+aside>img {
+    width: 100%;
+}
+
+/*-------------------- Main --------------------------*/
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+main>section>h2 {
+    margin: 0;
+    padding: 7% 0% 5%;
+    color: var(--grisOscuro);
+}
+
+main article {
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+main article>section {
+    border-top: var(--grisClaro) 1px solid;
+    padding: 15px;
+    position: relative;
+}
+
+main article .precio-descuento {
+    display: flex;
+}
+
+main article .precio {
+    flex-grow: 0.1; /*prefiero esta proporción*/
+}
+
+main article .descuento {
+    color: var(--verde);
+    flex-grow: 0.7;
+}
+
+main article .descripcion {
+    color: var(--grisOscuro);
+    display: none;
+}
+
+main article .camion {
+    border-radius: 50%;
+    border: solid 1px var(--verde);
+    background-color: white;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+}
+
+main article .camion i {
+    padding: 10px 3px 10px 3.5px; 
+    font-size: 16px;
+    color: var(--verde);
+    display: block;
+}
+
+/*--------------------- Footer -----------------------*/
+
+footer {
+    padding-top: 5%;
+}
+
+footer ul {
+    padding: 0%;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+footer>p {
+    color: var(--grisOscuro);
+}
+
+footer li {
+    list-style: none;
+    line-height: 1;
+    margin-bottom: 15%;
+}
+
+footer li>i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--celeste);
+}
+
+footer li>p {
+    color: var(--grisOscuro);
+}
+
+footer li h3, footer li p  {
+    margin: 0;
+}
+
+/*---------------------- Media Querys-----------------------*/
+
+@media (min-width: 520px) {
+
+    header {
+        padding: 3% 0% 1% 0%;
+    }
+
+    /*TopBar*/
+
+    header .header-top-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0.5%;
+        width: 95%;
+    }
+
+    header .top-l {
+        display: flex;
+        align-items: center;
+        padding-right: 5%;
+        margin-bottom: 0%;
+        flex-grow: 1;
+    }
+
+    
+    header .logo-header {
+        padding: 0%;
+        padding-right: 5%;
+    }
+    
+    /*------Buscador------*/
+    
+    header .search-bar {
+        align-items: center;
+        padding-left: 0%;
+        flex-wrap: nowrap;
+    }
+
+    header .copy-header {
+        display: flex;
+        margin-bottom: 0%;
+        text-align: right;
+    }
+
+    header .copy-header a {
+        display: block;
+    }
+
+    /*BottomBar*/
+   
+    header .header-bottom-bar {
+        width: 94%;        
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .header-bottom-bar .side-bar {
+        width: 45%;        
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .header-bottom-bar .login-bar {
+        width: 55%;        
+        display: flex;
+        justify-content: space-around;
+        padding-left: 2%;
+    }
+
+    header .header-bottom-bar .login-bar li {
+        display: flex;
+        flex-grow: 0.2;
+        justify-content: flex-end;
+    }
+
+    header .header-bottom-bar .login-bar>li>i {
+        padding: 0% 3%;
+    }
+
+    /*Menú hamburguesa*/
+
+    .burger-menu {
+        display: none;
+    }
+
+    /*------------ Main ----------------*/
+
+    main .ultima-visita>h2, main .ofertas>h2 {
+        display: block;
+        width: 95%;
+        margin: auto;
+        padding-bottom: 3%;
+        padding-top: 5%;
+    }
+
+    main .ultima-visita>div, main .ofertas>div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    main article .descripcion {
+        display: inherit;
+    }
+
+    main article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40vw;
+    }
+
+
+    @media (min-width: 768px) {
+
+        a, i, input {
+            font-size: 16px;
+        }
+
+        /*------Buscador------*/
+
+        header .search-bar input {
+            height: 2rem;
+            font-size: 1rem;
+        }
+
+        header .search-bar button {
+            height: 2rem;
+        }
+
+        header .top-l {
+            padding-right: 3%;
+        }
+
+        header .header-bottom-bar {
+            width: 94%;        
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        header .header-bottom-bar .side-bar, header .header-bottom-bar .login-bar {
+            width: 50%;        
+            display: flex;
+            justify-content: space-around;
+            padding-left: 0%;
+        }
+    
+        header .header-bottom-bar .login-bar li {
+            display: flex;
+            flex-grow: 0.3;
+            justify-content: flex-end;
+        }
+
+        header .header-bottom-bar .side-bar li {
+            display: flex;
+            flex-grow: 0.3;
+            justify-content: flex-start;
+        }
+
+        /*------------ Main -------------*/
+
+        main .ultima-visita>h2, main .ofertas>h2 {
+            display: block;
+            width: 98%;
+            margin: auto;
+            font-size: 22px;
+        }
+
+        main .ultima-visita>div, main .ofertas>div {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+        }
+
+        main article {
+            width: 20vw;
+        }
+    
+    }
+
+    @media (min-width: 1200px) {
+        a, i, input {
+            font-size: 18px;
+        }
+
+        header .header-bottom-bar, header .header-top-bar {
+            max-width: 1100px;
+        }
+
+        header .header-bottom-bar .side-bar, header .header-bottom-bar .login-bar {
+            width: 45%;        
+            display: flex;
+            justify-content: space-around;
+            padding-left: 0%;
+        }
+
+    }
+}
